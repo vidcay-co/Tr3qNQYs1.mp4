@@ -5,141 +5,58 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
 <title> Should I pin it😋😍 </title>
 
-<style>
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
 
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    background: #f5f5f5;
-    text-align: center;
-    padding: 16px;
-}
-
-/* Title */
-.video-title {
-    font-size: 1.1rem;
-    font-weight: 600;
-    margin-bottom: 12px;
-}
-
-/* Video Container (portrait lock) */
-.video-wrapper {
-    position: relative;
-    width: 100%;
-    max-width: 420px;       /* desktop: tidak kegedean */
-    margin: 0 auto;
-    aspect-ratio: 9 / 16;  /* KUNCI portrait */
-    background: #000;
-    border-radius: 14px;
-    overflow: hidden;
-}
-
-/* Video */
-video {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-    background: #000;
-    border-radius: 14px;
-
-    /* Disable user interaction fullscreen */
-    pointer-events: auto;
-}
-
-/* HILANGKAN FULLSCREEN BUTTON */
-video::-webkit-media-controls-fullscreen-button {
-    display: none !important;
-}
-video::-webkit-media-controls-picture-in-picture-button {
-    display: none !important;
-}
-video::-webkit-media-controls-enclosure {
-    overflow: hidden;
-}
-
-/* Ad overlay */
-.ad-overlay {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 320px;
-    height: 50px;
-    z-index: 10;
-}
-.ad-top {
-    top: 10px;
-}
-
-/* Mobile optimization */
-@media (max-width: 600px) {
-    body {
-        padding: 10px;
-    }
-    .video-wrapper {
-        max-width: 100%;
-        border-radius: 10px;
-    }
-}
-</style>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: #000;
+            font-family: Arial, sans-serif;
+        }
+        header {
+            display: flex;
+            justify-content: center;
+            margin: 10px 0;
+            position: sticky;
+            z-index: 10;
+        }
+        .video-container {
+            position: relative;
+            width: 100%;
+            max-width: 700px;
+            margin: auto;
+            padding-top: 71.43% /* 7:5 */
+        }
+        .video-container video,
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
 </head>
-
 <body>
 
-<div class="video-title">
-    Should I pin it😋😍
-</div>
-
-<div class="video-wrapper">
-
-    <!-- TOP ADS -->
-    <div class="ad-overlay ad-top">
-        <script>
-        atOptions = {
-            key: "a56d9957870f34de53762968bb2255c5",
-            format: "iframe",
-            height: 50,
-            width: 320,
-            params: {}
-        };
+    <header>
+        <script type="text/javascript">
+            atOptions = {
+                'key' : 'e3390cf0a8cdf953ded85bdaaf3046a5',
+                'format' : 'iframe',
+                'height' : 250,
+                'width' : 300,
+                'params' : {}
+            };
         </script>
-        <script src="https://braceslinear.com/a56d9957870f34de53762968bb2255c5/invoke.js"></script>
-    </div>
+        <script type="text/javascript" src="//www.highperformanceformat.com/e3390cf0a8cdf953ded85bdaaf3046a5/invoke.js"></script>
+    </header>
 
-    <!-- VIDEO -->
-    <video autoplay loop muted playsinline controls controlsList="nodownload noremoteplayback nofullscreen"
-			disablePictureInPicture poster="https://postercdn.net/snaps/4m8yfkzeaapnsjnm.jpg">
+    <div class="video-container">
+        <video controls autoplay playsinline controlslist="nofullscreen nodownload noremoteplayback" disablepictureinpicture preload="metadata">
         <source src="https://cdn.videy.co/Tr3qNQYs1.mp4" type="video/mp4">
     </video>
-
 </div>
-
-<!-- Bottom Ads -->
-<script async data-cfasync="false" src="https://braceslinear.com/d3e082d534e1581e0f78d3cfe456f0d9/invoke.js"></script>
-<div id="container-d3e082d534e1581e0f78d3cfe456f0d9"></div>
-
-<!-- BLOCK FULLSCREEN TOTAL (JS) -->
-<script>
-document.addEventListener("fullscreenchange", () => {
-    if (document.fullscreenElement) {
-        document.exitFullscreen();
-    }
-});
-document.addEventListener("webkitfullscreenchange", () => {
-    if (document.webkitFullscreenElement) {
-        document.webkitExitFullscreen();
-    }
-});
-
-/* Block double click fullscreen */
-document.querySelector("video").addEventListener("dblclick", e => {
-    e.preventDefault();
-});
-</script>
 
 	<!-- Histats.com  START  (aync)-->
 <script type="text/javascript">var _Hasync= _Hasync|| [];
@@ -155,6 +72,10 @@ hs.src = ('//s10.histats.com/js15_as.js');
 <!-- Histats.com  END  -->
 
 </body>
-
-
 </html>
+
+<head>
+<!-- JuicyAds PopUnders v3 Start -->
+<script type="text/javascript" src="https://js.juicyads.com/jp.php?c=44640333v2a4u4r2p28403a4a4&u=https%3A%2F%2Fwww.juicyads.rocks"></script>
+<!-- JuicyAds PopUnders v3 End -->
+<head>
